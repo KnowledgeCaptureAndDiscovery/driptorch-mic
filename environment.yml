@@ -1,0 +1,8 @@
+name: driptorch-mic
+channels:
+  - silvxlabs
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - driptorch
