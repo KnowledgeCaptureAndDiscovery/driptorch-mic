@@ -1,11 +1,11 @@
 arguments:
 - --
-baseCommand: /app/cwl/bin/run_driptorch_back
+baseCommand: /app/cwl/bin/run_driptorch_inferno
 class: CommandLineTool
 cwlVersion: v1.1
 hints:
   DockerRequirement:
-    dockerImageId: mintcomponents/run_driptorch:latest
+    dockerImageId: kcapd/run_driptorch:latest
 inputs:
   burn_unit_control_line_buffer:
     inputBinding:
@@ -23,26 +23,6 @@ inputs:
     inputBinding:
       prefix: --burn_unit_geojson
     type: string
-  firing_clockwise:
-    inputBinding:
-      prefix: --firing_clockwise
-    type: boolean
-  firing_offset:
-    inputBinding:
-      prefix: --firing_offset
-    type: float
-  igniter_line_dash_length:
-    inputBinding:
-      prefix: --igniter_line_dash_length
-    type: float
-  igniter_line_gap_length:
-    inputBinding:
-      prefix: --igniter_line_gap_length
-    type: float
-  igniter_velocity:
-    inputBinding:
-      prefix: --igniter_velocity
-    type: float
   output_epsg:
     inputBinding:
       prefix: --output_epsg
