@@ -5,7 +5,7 @@ class: CommandLineTool
 cwlVersion: v1.1
 hints:
   DockerRequirement:
-    dockerImageId: mintcomponents/run_driptorch:latest
+    dockerImageId: kcapd/run_driptorch:latest
 inputs:
   burn_unit_control_line_buffer:
     inputBinding:
